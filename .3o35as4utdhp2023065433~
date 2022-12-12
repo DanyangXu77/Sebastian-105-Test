@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <title>Changelog</title>
+  <link rel="icon" type="image/png" href="https://ssl.gstatic.com/classroom/favicon.png">
+<head>
+<style>
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: left;
+  padding: 7px;
+}
+
+tr:nth-child(odd) {
+  background-color: #white;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Changelog </h2>
+
+<table>
+  <tr> <!-- Headers (top of table)--->
+    <th>Date Changed</th>
+    <th>Changes made</th>
+    <th>Extra notes </th>
+  </tr>
+  <!-- Date Changed -->
+  <tr> 
+    <td>7/29/22</td> <!-- Date changed -->
+    <td>Changelog was created</td> <!-- Changes made --> 
+    <td>Future note: I might forget some events</td>
+<!-- Extra notes -->
+  </tr>
+  <tr> 
+    <td>7/30/22</td> <!-- Date changed -->
+    <td>Fixed changelog and acknowledgements so that the links actually work</td> <!-- Changes made -->
+    <td>Took me a whole day to figure out that the links didn't work.</td> <!-- Extra notes -->
+
+  </tr>
+  <tr>
+    <td>7/31/22</td> <!-- Date changed -->
+    <td>Changed the url a bit</td> <!-- Changes made -->
+    <td>Very very minor change. Barely noticable.</td> <!-- Extra notes -->
+
+  </tr>
+  <tr>
+    <td>7/31/22</td> <!-- Date changed -->
+    <td>Added Copter.io</td> <!-- Changes made -->
+    <td>did it in under 2 mins. Beat that choobs.</td> <!-- Extra notes -->
+  </tr>
+  <tr>
+    <td></td> <!-- Date changed -->
+    <td></td> <!-- Changes made -->
+    <td></td> <!-- Extra notes -->
+  </tr>
+</table>
+
+</body>
+</html>
+

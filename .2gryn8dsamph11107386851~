@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<title>Untitled Document - Copter.io</title>
+	<link rel="shortcut icon" href="https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CCS6F21XDE">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CCS6F21XDE');
+	</script>
+</head>
+
+<body>
+	<<iframe src="https://www.gameflare.com/embed/copter-io/" frameborder="0" scrolling="no" width="100%" height="100%" allowfullscreen></iframe>
+</body>
+
+</html>

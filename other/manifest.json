@@ -1,0 +1,46 @@
+{
+  "short_name": "Sebastian105",
+  "name": "Sebastian105",
+  "icons": [
+    {
+      "src": "https://sebastian105.repl.co/imgs/105.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    },
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6",
+  "shortcuts": [
+    {
+      "name": "Sebastian105",
+      "short_name": "Sebastian105",
+      "description": "My Website",
+      "url": "/today?source=pwa",
+      "icons": [{ "src": "105.png", "sizes": "300x300" }]
+    },
+    {
+      "name": "Sebastian105",
+      "short_name": "Sebastian105",
+      "description": "My Website",
+      "url": "/tomorrow?source=pwa",
+      "icons": [{ "src": "105.png", "sizes": "300x300" }]
+    }
+  ],
+  "description": "My Website",
+  "screenshots": [
+    {
+      "src": "https://sebastian105.repl.co/imgs/105.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    },
+    {
+      "src": "https://sebastian105.repl.co/imgs/105.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    }
+  ]
+}

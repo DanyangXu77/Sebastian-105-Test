@@ -1,0 +1,130 @@
+
+<!DOCTYPE html><html lang="en"><head><title>Untitled document - Bullet force</title><style id="pacman-styles">/* background */
+body {
+  background-image: linear-gradient(290deg, #3b2b73 55%, #6f2f93, #6f2f93);
+  background-position: center;
+  text-align: center;
+} 
+/* for positioning of pacman loader */
+body, html { height: 100%; }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+@keyframes rotate_preloadpacman_half_up {
+  0% {
+    transform: rotate(270deg); }
+  50% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(270deg); }
+}
+
+@keyframes rotate_preloadpacman_half_down {
+  0% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes preloadpacman-balls {
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-100px, -6.25px);
+  }
+}
+
+.preloadpacman {
+  position: relative;
+}
+.preloadpacman > div:nth-child(2) {
+  animation: preloadpacman-balls 1s -0.99s infinite linear;
+}
+.preloadpacman > div:nth-child(3) {
+  animation: preloadpacman-balls 1s -0.66s infinite linear;
+}
+.preloadpacman > div:nth-child(4) {
+  animation: preloadpacman-balls 1s -0.33s infinite linear;
+}
+.preloadpacman > div:nth-child(5) {
+  animation: preloadpacman-balls 1s 0s infinite linear;
+}
+.preloadpacman > div:first-of-type {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_up 0.5s 0s infinite;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(2) {
+  width: 0px;
+  height: 0px;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #fff;
+  border-left: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  border-radius: 25px;
+  animation: rotate_preloadpacman_half_down 0.5s 0s infinite;
+  margin-top: -50px;
+  position: relative;
+  left: -30px;
+}
+.preloadpacman > div:nth-child(3),
+.preloadpacman > div:nth-child(4),
+.preloadpacman > div:nth-child(5),
+.preloadpacman > div:nth-child(6) {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform: translate(0, -6.25px);
+  top: 25px;
+  left: 70px;
+}
+</style></head><body><div class="preloadpacman" id="pacman"><div></div><div></div><div></div><div></div><div></div></div><script type="text/javascript">function loadScript(url, callback) {
+  var head = document.head;
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = url;
+  script.async = true;
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+var options = {"loader":"5.6.x","loaderOptions":{"moduleJsonUrl":"https://files.crazygames.com/bullet-force-multiplayer/128/Build/BF_846CrazyGames_prod.json","unityLoaderUrl":"https://files.crazygames.com/unityloaders/UnityLoader-v3.js"},"author":"Blayze Games","thumbnail":"https://images.crazygames.com/games/bullet-force-multiplayer/cover-1588010858655.png?auto=format,compress&q=75&cs=strip&w=360","gameName":"Bullet Force","gameHttps":true,"gameSlug":"bullet-force-multiplayer","gameId":"11888","gameStatus":"published","showAdOnExternal":"ALWAYS","showAdOnInternal":"DEFAULT","disableEmbedding":false,"dollarRate":0.9761249596128297,"upvotes":960346,"downvotes":104827,"releaseDate":"2016-06-06","locale":"en_US","controls":{"mouse":{"left":{"en_US":"Shoot"},"right":{"en_US":"Zoom"},"middle":{"en_US":"Change weapon"}},"keyboard":[{"keys":["WASD"],"label":{"en_US":"Move"}},{"keys":["SPACE"],"label":{"en_US":"Jump"}},{"keys":["SHIFT"],"label":{"en_US":"Run"}},{"keys":["P"],"label":{"en_US":"Pause"}},{"keys":["ENTER"],"label":{"en_US":"Respawn"}},{"keys":["G"],"label":{"en_US":"Throw grenade"}},{"keys":["E"],"label":{"en_US":"Pick up a gun"}},{"keys":["F"],"label":{"en_US":"Use a knife"}},{"keys":["R"],"label":{"en_US":"Reload"}},{"keys":["C"],"label":{"en_US":"Crouch"}},{"keys":["2"],"label":{"en_US":"Change weapon"}},{"keys":["ARROWS"],"label":{"en_US":"Killstreaks"}},{"keys":["TAB"],"label":{"en_US":"Score"}}]},"videoThumbnail":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-205x115.mp4","video":{"original":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer.mp4","sizes":[{"width":205,"height":115,"location":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-205x115.mp4"},{"width":249,"height":140,"location":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-249x140.mp4"},{"width":364,"height":208,"location":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-364x208.mp4"},{"width":494,"height":276,"location":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-494x276.mp4"},{"width":611,"height":343,"location":"https://videos.crazygames.com/bullet-force-multiplayer/8/bullet-force-multiplayer-611x343.mp4"}]},"sandbox":true,"totalSize":"247 MB","minTimeBetweenMidrollAdsInMs":180000,"minTimeBetweenRewardedAdsInMs":8000,"noMidrollAdInFirstMinutes":1,"noRewardedAdInFirstMinutes":0,"categoryEnSlug":"shooting","tagsEnSlugs":["3d","webgl","arena","with-friends","war","gun","weapon","soldier","multiplayer","first-person-shooter"],"isKids":false,"hasMidroll":false,"hasRewarded":true,"fullscreen":"ADDS_VALUE","orientation":null,"category":"FPS","categoryLink":"https://www.crazygames.com/t/first-person-shooter","gameLink":"https://www.crazygames.com/game/bullet-force-multiplayer","alternativeGames":[{"category":"Shooting","gameSlug":"forward-assault","gameName":"Forward Assault Remix","rating":8.8,"thumbnail":"https://images.crazygames.com/games/forward-assault/cover-1584185910210.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/forward-assault/1/forward-assault-205x115.mp4","gameLink":"https://www.crazygames.com/game/forward-assault","loader":"5.6.x"},{"category":".io","gameSlug":"shellshockersio","gameName":"Shell Shockers","rating":9.2,"thumbnail":"https://images.crazygames.com/shellshockersio/20211202050253/shellshockersio-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/shellshockersio/2/shellshockersio-205x115.mp4","gameLink":"https://www.crazygames.com/game/shellshockersio","loader":"iframe"},{"category":"Shooting","gameSlug":"bot-machines","gameName":"Assault Bots","rating":8.9,"thumbnail":"https://images.crazygames.com/bot-machines/20220727161720/bot-machines-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/bot-machines/5/bot-machines-205x115.mp4","gameLink":"https://www.crazygames.com/game/bot-machines","loader":"unity2020"},{"category":".io","gameSlug":"merc-zone","gameName":"Merc Zone","rating":8.9,"thumbnail":"https://images.crazygames.com/games/merc-zone/cover-1614702000604.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/merc-zone/4/merc-zone-205x115.mp4","gameLink":"https://www.crazygames.com/game/merc-zone","loader":"iframe"},{"category":".io","gameSlug":"pixel-warfare","gameName":"Pixel Warfare","rating":9,"thumbnail":"https://images.crazygames.com/pixel-warfare/20220412144537/pixel-warfare-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/pixel-warfare/2/pixel-warfare-205x115.mp4","gameLink":"https://www.crazygames.com/game/pixel-warfare","loader":"unity2021"},{"category":"Shooting","gameSlug":"time-shooter-2","gameName":"Time Shooter 2","rating":9.1,"thumbnail":"https://images.crazygames.com/games/time-shooter-2/cover-1655215853507.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/time-shooter-2/1/time-shooter-2-205x115.mp4","gameLink":"https://www.crazygames.com/game/time-shooter-2","loader":"unity2020"},{"category":"Shooting","gameSlug":"downtown-1930s-mafia","gameName":"Downtown 1930s Mafia","rating":9.1,"thumbnail":"https://images.crazygames.com/downtown-1930s-mafia/20201106164225/downtown-1930s-mafia-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/downtown-1930s-mafia/2/downtown-1930s-mafia-205x115.mp4","gameLink":"https://www.crazygames.com/game/downtown-1930s-mafia","loader":"5.6.x"},{"category":"Shooting","gameSlug":"buildnow-gg","gameName":"BuildNow GG","rating":9,"thumbnail":"https://images.crazygames.com/buildnow-gg/20210823164305/buildnow-gg-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/buildnow-gg/2/buildnow-gg-205x115.mp4","gameLink":"https://www.crazygames.com/game/buildnow-gg","loader":"unity2020"},{"category":"Shooting","gameSlug":"metrage","gameName":"Met Rage","rating":9.2,"thumbnail":"https://images.crazygames.com/games/metrage/thumb-1562259732086.png?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/metrage/2/metrage-205x115.mp4","gameLink":"https://www.crazygames.com/game/metrage","loader":"5.6.x"},{"category":"Shooting","gameSlug":"fields-of-fury","gameName":"Fields of Fury","rating":9,"thumbnail":"https://images.crazygames.com/fields-of-fury/20220406110511/fields-of-fury-cover?auto=format,compress&q=75&cs=strip&w=360","videoThumbnail":"https://videos.crazygames.com/fields-of-fury/1/fields-of-fury-205x115.mp4","gameLink":"https://www.crazygames.com/game/fields-of-fury","loader":"iframe"}],"domainHasNoCMP":false};
+var SDK_READY = false;
+var GF_READY = false;
+var GF_LOAD_CALLED = false;
+loadScript("https://gameframe.crazygames.com/crazygames-gameframe-v1.bundle.js", function() {
+    Crazygames.load(options).then(function() {
+      var pacmanWrapper = document.getElementById('pacman');
+      var pacmanStyles = document.getElementById('pacman-styles');
+
+      if (pacmanWrapper && pacmanStyles) {
+        pacmanWrapper.remove();
+        pacmanStyles.remove();
+      }
+    });
+});</script>
+<script>
+  alert("as you can see this game is from crazygames. I will probably get games from poki, gameflare, crazygames, and other stuff.")
+</script></body></html>
